@@ -6,9 +6,17 @@
     "start": "next start"
   },
   "dependencies": {
+<<<<<<< HEAD
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+=======
+    "@headlessui/react": "^1.4.3",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-responsive-carousel": "^3.2.22"
+>>>>>>> 9707c95 (add more)
   },
   "devDependencies": {
     "@types/node": "17.0.4",

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+<<<<<<< HEAD
 
 export default function Home() {
   return (
@@ -78,5 +79,29 @@ export default function Home() {
         </a>
       </footer>
     </div>
+=======
+import Navbar from '../components/Main/Navbar'
+import Layout from '../components/Main/Layout'
+import Footer from '../components/Footer'
+import { useEffect } from 'react'
+
+export default function Home() {
+
+  return (
+    <>
+        <Head>
+            <title>Mầm non Hoa Lư Quy Nhơn</title>
+            <link rel="icon" href="/favicon.ico" />
+            <link href="/font/GoogleSans-Regular.ttf" rel="stylesheet" />
+        </Head>
+        <Navbar />
+        <main className='min-h-screen text-gray-900 dark:bg-gray-800 dark:text-gray-50'>
+            <Layout />
+        </main>
+        <footer className="py-4">
+            <Footer /> 
+        </footer>
+    </>
+>>>>>>> 9707c95 (add more)
   )
 }
