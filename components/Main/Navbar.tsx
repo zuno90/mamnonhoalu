@@ -70,6 +70,6 @@ const navigation = [
     { name: 'LIÊN HỆ', href: '#contact', current: false }
 ]
 
-function classNames(...classes) {
+function classNames(...classes: any) {
     return classes.filter(Boolean).join(' ')
 }
