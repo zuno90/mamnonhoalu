@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< HEAD
-=======
 
 @font-face {
     font-family: 'GoogleSans';
@@ -13,4 +11,3 @@ body {
     margin: 0 auto;
     font-family: 'GoogleSans';
 }
->>>>>>> 9707c95 (add more)
