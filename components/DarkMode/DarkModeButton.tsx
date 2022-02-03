@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import ToggleDarkMode from './ToggleDarkMode'
 
+
 export default function DarkModeButton() {
     const [colorTheme, setTheme]: any = ToggleDarkMode()
-    const [enabled, setEnabled] = useState(colorTheme === "dark" ? false : true)
+    const [enabled, setEnabled] = useState<boolean>(colorTheme === "dark" ? false : true)
 
     const handleToggle = () => {
         setTheme(colorTheme)
