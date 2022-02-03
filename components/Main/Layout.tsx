@@ -5,7 +5,6 @@ import News from "./Main/News"
 import QuestionAsk from "./Main/QuestionAsk"
 
 export default function Layout() {
-    
     return (
         <>
             <section><img src="/img/bg-top.png" alt="bg-top" /></section>
