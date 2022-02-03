@@ -2,15 +2,17 @@ import { useState } from 'react'
 import ToggleDarkMode from './ToggleDarkMode'
 
 export default function DarkModeButton() {
-    const [colorTheme, setTheme] = ToggleDarkMode()
+    const [colorTheme, setTheme]: any = ToggleDarkMode()
     const [enabled, setEnabled] = useState(colorTheme === "dark" ? false : true)
+
+    const handleToggle = () => {
+        setTheme(colorTheme)
+        setEnabled(!enabled)
+    }
 
     return (
         <div
-            onClick={() => {
-                setTheme(colorTheme)
-                setEnabled(!enabled)
-            }}
+            onClick={handleToggle}
             className="cursor-pointer inline-flex"
         >
             <svg className={classNames(enabled ? 'text-gray-600' : 'text-yellow-800')} width="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
