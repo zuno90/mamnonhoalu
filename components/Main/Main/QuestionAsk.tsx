@@ -25,3 +25,7 @@ export default function QuestionAsk() {
         </div>
     )
 }
+
+function classNames(...classes: any) {
+    return classes.filter(Boolean).join(' ')
+}

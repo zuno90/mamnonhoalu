@@ -8,3 +8,7 @@ export default function News() {
         </div>
     )
 }
+
+function classNames(...classes: any) {
+    return classes.filter(Boolean).join(' ')
+}

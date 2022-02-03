@@ -7,3 +7,7 @@ export default function HoaLu() {
         </>
     )
 }
+
+function classNames(...classes: any) {
+    return classes.filter(Boolean).join(' ')
+}
