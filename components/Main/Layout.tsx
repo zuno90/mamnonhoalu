@@ -8,11 +8,11 @@ export default function Layout() {
     return (
         <>
             <section><img src="/img/bg-top.png" alt="bg-top" /></section>
-            <section className="md:h-screen py-4"><Intro /></section>
-            <section className="md:h-screen py-4"><Education /></section>
-            <section className="md:h-screen"><HoaLu /></section>
-            <section className="md:h-screen"><News /></section>
-            <section className="md:h-screen bg-cover"><QuestionAsk /></section>
+            <section><Intro /></section>
+            <section><Education /></section>
+            <section><HoaLu /></section>
+            <section><News /></section>
+            <section><QuestionAsk /></section>
         </>
     )
 }

@@ -20,8 +20,8 @@ export default function QuestionAsk() {
                     <p>Giải đáp: Phụ huynh đưa đón bé đến trường từ 6h30 – 17h30 từ thứ Hai đến Chủ Nhật</p>
                 </div>
             </Carousel>
-            <img src="/img/bg-cauhoi-left.png" alt="" className='z-[-1] absolute top-0 left-0' />
-            <img src="/img/bg-cauhoi-right.png" alt="" className='z-[-1] absolute top-0 right-0' />
+            <img src="/img/bg-cauhoi-left.png" alt="" className="z-[-1] sm:w-fit h-full absolute top-0 left-0" />
+            <img src="/img/bg-cauhoi-right.png" alt="" className='z-[-1] sm:w-fit h-full absolute top-0 right-0' />
         </div>
     )
 }

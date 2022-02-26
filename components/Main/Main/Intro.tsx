@@ -3,8 +3,8 @@ import { Tab } from '@headlessui/react'
 export default function Intro() {
 
     return (
-        <div className='relative flex items-center justify-center'>
-            <Tab.Group as="div" className="px-40">
+        <div className='relative'>
+            <Tab.Group as="div" className="lg:px-40 px-10 flex flex-col items-center justify-center">
                 {introTab.map(item =>
                     <Tab.Panel
                         key={item.id}
@@ -13,7 +13,7 @@ export default function Intro() {
                         {item.content}
                     </Tab.Panel>
                 )}
-                <Tab.List className="grid md:grid-cols-4 sm:grid-cols-1 gap-4">
+                <Tab.List className="py-4 grid md:grid-cols-4 sm:grid-cols-1 gap-4">
                     {introTab.map(item =>
                         <Tab
                             key={item.id}
@@ -28,8 +28,8 @@ export default function Intro() {
                     )}
                 </Tab.List>
             </Tab.Group>
-            <img src="/img/bg-gt-left.png" alt="" className='z-[-1] absolute h-screen top-0 left-0' />
-            <img src="/img/bg-gt-right.png" alt="" className='z-[-1] absolute h-screen top-0 right-0' />
+            <img src="/img/bg-gt-left.png" alt="" className='z-[-1] absolute sm:w-fit h-full top-0 left-0' />
+            <img src="/img/bg-gt-right.png" alt="" className='z-[-1] absolute sm:w-fit h-full bottom-0 right-0' />
         </div>
     )
 }
