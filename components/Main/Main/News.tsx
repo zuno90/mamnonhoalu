@@ -59,7 +59,7 @@ export default function News() {
 const tabContents = [
   {
     id: 1,
-    title: "An toàn học đường – Phòng dịch Covid-19",
+    title: "An toàn học đường – Phòng dịch Covid-19 20 21 22 23",
     img: "",
     content: (
       <div className="space-y-4">
