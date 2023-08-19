@@ -14,7 +14,7 @@ jobs:
       - name: ssh to ubuntu server
         uses: appleboy/ssh-action@master
         with:
-          host: 172.31.13.252
+          host: 13.214.30.74
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           port: 22
