@@ -1,0 +1,29 @@
+name: deploy mamnonhoalu by ZUNO
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    # if: ${{ github.event.pull_request.merged }}
+    name: DEPLOY
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout main branch
+        uses: actions/checkout@v2
+
+      - name: ssh to ubuntu server
+        uses: supnobita/ssh-action@master
+        with:
+          host: 172.31.13.252
+          username: ubuntu
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          envs: GITHUB_RUN_NUMBER
+          script: |
+            echo "SHH OK!"
+
+      - name: copy file from ubuntu to /var/www
+        run: |
+          rm -rf mamnonhoalu
+          git clone https://github.com/zuno90/mamnonhoalu.git
+          sudo cp mamnonhoalu /var/www/mamnonhoalu
