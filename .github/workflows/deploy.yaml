@@ -3,9 +3,9 @@ on:
   push:
     branches: [main]
 jobs:
-  build:
+  shh-server:
     # if: ${{ github.event.pull_request.merged }}
-    name: DEPLOY
+    name: SSH to EC2
     runs-on: ubuntu-latest
     steps:
       - name: checkout main branch
@@ -19,9 +19,28 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           envs: GITHUB_RUN_NUMBER
-          script: |
-            cd /home/ubuntu
-            rm -rf mamnonhoalu
-            git clone https://github.com/zuno90/mamnonhoalu.git
-            sudo cp mamnonhoalu /var/www/mamnonhoalu
-          
+          # script: |
+          #   cd /home/ubuntu
+          #   rm -rf mamnonhoalu
+          #   git clone https://github.com/zuno90/mamnonhoalu.git
+          #   sudo cp mamnonhoalu /var/www/mamnonhoalu
+
+  run-script:
+    name: BUILD STATIC NEXTJS
+    runs-on: ubuntu-latest
+    steps:
+      - name: build static file
+        with:
+          envs: GITHUB_RUN_NUMBER
+        run: |
+          cd /home/ubuntu
+          rm -rf mamnonhoalu
+          git clone https://github.com/zuno90/mamnonhoalu.git
+          cd mamnonhoalu
+          docker build -t mamnonhoalu $GITHUB_RUN_NUMBER .
+          docker stop mamnonhoalu || echo "stop docker OK"
+          docker rm mamnonhoalu || echo "remove OK"
+          docker run -d --restart unless-stopped --name mamnonhoalu -p 8080:3000 \
+              -e NODE_ENV=production \
+              -e HOST=172.31.31.206 \
+              mamnonhoalu:$GITHUB_RUN_NUMBER
