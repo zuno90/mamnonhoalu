@@ -142,17 +142,17 @@ export default function Footer() {
         />
       </div>
       <img
-        src="/img/bg-lienhe-left.png"
+        src="img/bg-lienhe-left.png"
         alt=""
         className="z-[-1] opacity-50 h-full absolute bottom-0 left-0"
       />
       <img
-        src="/img/bg-lienhe-right.png"
+        src="img/bg-lienhe-right.png"
         alt=""
         className="z-[-1] opacity-50 h-full absolute bottom-0 right-0"
       />
       <img
-        src="/img/bg-lienhe-bottom.png"
+        src="img/bg-lienhe-bottom.png"
         alt=""
         className="z-[-1] opacity-50 w-full h-50 absolute bottom-0 left-0"
       />

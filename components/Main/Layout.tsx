@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <>
       <section>
-        <img src="/img/bg-top.png" alt="bg-top" />
+        <img src="img/bg-top.png" alt="bg-top" />
       </section>
       <section>
         <Intro />

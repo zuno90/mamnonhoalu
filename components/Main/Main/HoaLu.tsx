@@ -17,12 +17,12 @@ export default function HoaLu() {
         </div>
       </div>
       <img
-        src="/img/bg-360-left-top.png"
+        src="img/bg-360-left-top.png"
         alt=""
         className="z-[-1] opacity-50 sm:w-fit h-full absolute top-0 left-0"
       />
       <img
-        src="/img/bg-360-right-bottom.png"
+        src="img/bg-360-right-bottom.png"
         alt=""
         className="z-[-1] opacity-50 sm:w-fit h-full absolute bottom-0 right-0"
       />
