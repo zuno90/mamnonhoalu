@@ -19,11 +19,5 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           envs: GITHUB_RUN_NUMBER
-          run: echo "ssh is connecting...!"
-
-      - name: copy file from ubuntu to /var/www
-        run: |
-          cd /home/ubuntu
-          rm -rf mamnonhoalu
-          git clone https://github.com/zuno90/mamnonhoalu.git
-          sudo cp mamnonhoalu /var/www/mamnonhoalu
+          script: sh deploy.sh
+          
