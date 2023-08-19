@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'GoogleSans';
-    src: url("/font/GoogleSans-Regular.ttf") format('truetype');
+  font-family: "GoogleSans";
+  src: url("../public/fonts/GoogleSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    margin: 0 auto;
-    font-family: 'GoogleSans';
+  margin: 0 auto;
+  font-family: "GoogleSans";
 }

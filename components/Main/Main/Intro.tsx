@@ -30,12 +30,12 @@ export default function Intro() {
         </Tab.List>
       </Tab.Group>
       <img
-        src="/img/bg-gt-left.png"
+        src="img/bg-gt-left.png"
         alt=""
         className="z-[-1] absolute opacity-50 h-full top-0 left-0"
       />
       <img
-        src="/img/bg-gt-right.png"
+        src="img/bg-gt-right.png"
         alt=""
         className="z-[-1] absolute opacity-50 h-full bottom-0 right-0"
       />

@@ -48,12 +48,12 @@ export default function Navbar() {
               <div className="flex-shrink-0 flex items-center">
                 <img
                   className="block lg:hidden h-8 w-auto"
-                  src="/img/logo.png"
+                  src="img/logo.png"
                   alt="logo mobile"
                 />
                 <img
                   className="hidden lg:block h-8 w-auto"
-                  src="/img/logo.png"
+                  src="img/logo.png"
                   alt="logo desktop"
                 />
               </div>

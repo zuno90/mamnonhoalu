@@ -26,12 +26,12 @@ export default function Education() {
         ) : null}
       </div>
       <img
-        src="/img/bg-chuongtrinhhoc-left.png"
+        src="img/bg-chuongtrinhhoc-left.png"
         alt=""
         className="z-[-1] opacity-50 h-full absolute top-0 left-0"
       />
       <img
-        src="/img/bg-chuongtrinhhoc-right.png"
+        src="img/bg-chuongtrinhhoc-right.png"
         alt=""
         className="z-[-1] opacity-50 h-full absolute bottom-0 right-0"
       />

@@ -35,12 +35,12 @@ export default function QuestionAsk() {
         </Carousel>
       </div>
       <img
-        src="/img/bg-cauhoi-left.png"
+        src="img/bg-cauhoi-left.png"
         alt=""
         className="z-[-1] opacity-50 h-full absolute top-0 left-0"
       />
       <img
-        src="/img/bg-cauhoi-right.png"
+        src="img/bg-cauhoi-right.png"
         alt=""
         className="z-[-1] opacity-50 h-full absolute bottom-0 right-0"
       />

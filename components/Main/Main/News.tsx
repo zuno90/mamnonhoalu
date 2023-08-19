@@ -43,12 +43,12 @@ export default function News() {
         </Tab.Group>
       </div>
       <img
-        src="/img/bg-tintuc-left.png"
+        src="img/bg-tintuc-left.png"
         alt=""
         className="z-[-1] opacity-50 absolute sm:w-fit h-full top-0 left-0"
       />
       <img
-        src="/img/bg-tintuc-right.png"
+        src="img/bg-tintuc-right.png"
         alt=""
         className="z-[-1] opacity-50 absolute sm:w-fit h-full bottom-0 right-0"
       />
