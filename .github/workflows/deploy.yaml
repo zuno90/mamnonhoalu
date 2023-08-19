@@ -19,5 +19,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           envs: GITHUB_RUN_NUMBER
-          script: sh deploy.sh
+          script: |
+            cd /home/ubuntu
+            rm -rf mamnonhoalu
+            git clone https://github.com/zuno90/mamnonhoalu.git
+            sudo cp mamnonhoalu /var/www/mamnonhoalu
           
